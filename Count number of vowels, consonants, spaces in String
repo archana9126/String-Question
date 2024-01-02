@@ -1,0 +1,25 @@
+public class ToChechVCW {
+    public static void main(String[] args) {
+        String S = "hey How u doing";
+       checking(S);
+    }
+    static void checking(String S){
+        int vowel = 0;
+        int constraint = 0;
+        int whitespace = 0;
+        S = S.toLowerCase();
+
+        for(int i=0; i<S.length(); i++) {
+            char ch = S.charAt(i);
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+                vowel++;
+            else if (ch >= 'a' && ch <= 'z')
+                constraint++;
+            else if (ch == ' ')
+                whitespace++;
+        }
+        System.out.println("vowel :" + vowel);
+        System.out.println("constraint :" + constraint);
+        System.out.println("whitespace :" + whitespace);
+    }
+}
