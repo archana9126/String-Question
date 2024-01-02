@@ -1,0 +1,7 @@
+public class PrintASCIIvalue {
+    public static void main(String[] args) {
+        char c = 'A';
+        int n = c;
+        System.out.println(n);
+    }
+}
