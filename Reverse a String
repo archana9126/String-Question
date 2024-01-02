@@ -1,0 +1,15 @@
+public class ReverseString {
+    public static void main(String[] args) {
+        String Str = "Hello";
+        String ans = Reverse(Str);
+        System.out.println(ans);
+    }
+    static String Reverse(String Str){
+        String Newstr = " ";
+        int n = Str.length();
+        for (int i =n-1; i >=0; i--) {
+            Newstr = Newstr + Str.charAt(i);
+        }
+        return Newstr;
+    }
+}
