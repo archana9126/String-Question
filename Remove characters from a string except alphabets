@@ -1,0 +1,15 @@
+public class RemoveCharacters {
+    public static void main(String[] args) {
+        String Str = "#ake12% *&u ^$#wortar*";
+        Remove(Str);
+    }
+    static void Remove(String Str){
+        String Str1 = " ";
+        for (int i = 0; i <Str.length(); i++) {
+            char ch = Str.charAt(i);
+            if (ch >= 65 && ch <= 90 || ch >= 97 && ch <= 122)
+                Str1 = Str1 + ch;
+        }
+        System.out.println("Final String :" + Str1);
+    }
+}
