@@ -1,0 +1,16 @@
+public class RemoveVowel {
+    public static void main(String[] args) {
+        String str = "remove vowel from string";
+        Remove(str);
+    }
+    static void Remove(String str){
+        String Str1 = " ";
+        for (int i = 0; i <str.length(); i++) {
+            char ch = str.charAt(i);
+            if(!(ch == 'a' || ch == 'A' || ch == 'e' || ch == 'E' || ch == 'i' || ch == 'I'
+                || ch == 'o' || ch == 'O' || ch == 'u' || ch == 'U'))
+                Str1 = Str1 + ch;
+        }
+        System.out.println("Final String is : " + Str1);
+    }
+}
