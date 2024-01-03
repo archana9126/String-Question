@@ -1,0 +1,16 @@
+public class RemoveBrackets {
+    public static void main(String[] args) {
+        String Str = "a+((b-c)+d)";
+        Remove(Str);
+    }
+    static void Remove(String Str){
+        String str1 = " ";
+        int n = Str.length();
+        for (int i = 0; i <n; i++) {
+            char ch = Str.charAt(i);
+            if(!(ch == '(' || ch == ')'))
+                str1 = str1 + ch;
+        }
+        System.out.println("Final String : " + str1);
+    }
+}
